@@ -5,10 +5,10 @@
 
 sub MAIN(*@files) {
     #Task 1 - a Test of Bag and Bag addition
-    my Bag $counts = bag { 'a' .. 'z' => 0 };
+    my Bag $counts;
 
     # Create a bag for each file and add counts using Bag addition ⊎ or (+)
-    $counts ⊎= $_.IO.slurp.lc.comb.Bag for @files;
+    $counts ⊎= .IO.slurp.lc.comb.Bag for @files;
 
     say "$_: $counts{$_}"              for 'a' .. 'z';
 }
