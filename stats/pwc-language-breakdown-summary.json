@@ -1,4 +1,53 @@
 {
+   "series" : [
+      {
+         "data" : [
+            [
+               "Blog",
+               405
+            ],
+            [
+               "Perl 5",
+               1565
+            ],
+            [
+               "Perl 6",
+               931
+            ]
+         ],
+         "dataLabels" : {
+            "format" : "{point.y:.0f}",
+            "rotation" : -90,
+            "style" : {
+               "fontSize" : "13px",
+               "fontFamily" : "Verdana, sans-serif"
+            },
+            "y" : 10,
+            "align" : "right",
+            "color" : "#FFFFFF",
+            "enabled" : "true"
+         },
+         "name" : "Contributions"
+      }
+   ],
+   "subtitle" : {
+      "text" : "Last updated at 2019-12-12 20:09:52 GMT"
+   },
+   "chart" : {
+      "type" : "column"
+   },
+   "tooltip" : {
+      "pointFormat" : "<b>{point.y:.0f}</b>"
+   },
+   "yAxis" : {
+      "min" : 0,
+      "title" : {
+         "text" : null
+      }
+   },
+   "title" : {
+      "text" : "Perl Weekly Challenge Contributions - 2019"
+   },
    "xAxis" : {
       "labels" : {
          "style" : {
@@ -8,56 +57,7 @@
       },
       "type" : "category"
    },
-   "chart" : {
-      "type" : "column"
-   },
-   "yAxis" : {
-      "min" : 0,
-      "title" : {
-         "text" : null
-      }
-   },
-   "subtitle" : {
-      "text" : "Last updated at 2019-12-02 18:03:36 GMT"
-   },
-   "tooltip" : {
-      "pointFormat" : "<b>{point.y:.0f}</b>"
-   },
    "legend" : {
       "enabled" : "false"
-   },
-   "title" : {
-      "text" : "Perl Weekly Challenge Contributions - 2019"
-   },
-   "series" : [
-      {
-         "dataLabels" : {
-            "enabled" : "true",
-            "format" : "{point.y:.0f}",
-            "color" : "#FFFFFF",
-            "align" : "right",
-            "rotation" : -90,
-            "y" : 10,
-            "style" : {
-               "fontSize" : "13px",
-               "fontFamily" : "Verdana, sans-serif"
-            }
-         },
-         "data" : [
-            [
-               "Blog",
-               392
-            ],
-            [
-               "Perl 5",
-               1520
-            ],
-            [
-               "Perl 6",
-               904
-            ]
-         ],
-         "name" : "Contributions"
-      }
-   ]
+   }
 }
